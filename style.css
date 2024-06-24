@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans';
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image:url(buddha\ image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    text-align: center;
+    color: #2F411B;
+    padding-left: 2%;
+}
+
+.header {
+    text-align: center;
+}
+
+.navigation {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px #00000026;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: inline;
+    padding: 10px;
+    align-items: flex-end;
+}
+
+.navigation li a {
+    text-decoration: none;
+    text-align: center;
+    color: #2F411B;
+    border-bottom: 3px solid transparent;
+}
+
+.navigation li a:hover {
+    color: #265122;
+    border-bottom: 3px solid #265122;
+    transition: .5s;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.row {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.About {
+    flex-basis: 40%;
+    background: #2F411B;
+    color: white;
+    padding: 20px 15px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+.About:hover {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.752)
+}
+
+.Services {
+    flex-basis: 40%;
+    background: #2F411B;
+    color: white;
+    padding: 20px 15px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.Services:hover {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.752)
+}
+
+.row a:link,
+a:visited {
+    background-color: white;
+    color: #2F411B;
+    border: 2px solid #2F411B;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.row a:hover,
+a:active {
+    background-color: #265122;
+    color: white;
+}
+
+.products {
+    margin: auto;
+    color: #2F411B;
+    background-color: whitesmoke;
+    text-align: center;
+    overflow: hidden;
+}
+
+.products h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    gap: 1.5rem;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pictures .pics {
+    padding-top: 20px;
+}
+
+.pictures .pics:hover {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.6)
+}
+
+.products a {
+    margin-bottom: 5rem;
+}
+
+.products a:link,
+a:visited {
+    background-color: white;
+    color: #2F411B;
+    border: 2px solid #2F411B;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.products a:hover,
+a:active {
+    background-color: #265122;
+    color: white;
+}
+
+.footer {
+    background-color: #2F411B;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+}
+
+.footer .content li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 20px;
+}
+
+.footer .content li a{
+    text-decoration: none;
+    color:beige;
+    transition: all .40s ease;
+}
+
+
+.footer .content li a:hover{
+    color: #FECF3F;
+}
