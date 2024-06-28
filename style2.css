@@ -4,14 +4,6 @@ body {
     font-family: 'Lucida Sans',sans-serif;
 }
 
-/*.banner {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(boudha.JPG);
-    background-size: cover;
-    background-position: center;
-}*/
-
 .navigation {
     overflow: hidden;
     position: fixed;
@@ -131,31 +123,31 @@ body {
 }
 
 
-.content{
+.aboutus .content{
     display:flex;
     width:100%;
     margin-bottom:50px;
 }
-.content img{
+.aboutus .content img{
     max-width: 50%;
     height: auto;
 }
 
-.content1{
+.aboutus .content1{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.content1 .text{
+.aboutus .content1 .text{
     padding-left:15px;
 }
 
-.content2{
+.aboutus .content2{
     flex-direction: row;
     justify-content: space-between;
 }
 
-.content2 .text{
+.aboutus .content2 .text{
     padding-right:15px;
 }
 
@@ -203,4 +195,11 @@ body {
 
 .footer .content li a:hover{
     color: #FECF3F;
+}
+
+.footer .icons{
+    font-size: 24px;
+}
+.footer .icons a{
+    color:white;
 }

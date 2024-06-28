@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basanta Emporium</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans',sans-serif;
+        }
+
+        .logo {
+            text-align: center;
+            color: #2F411B;
+            padding-left: 2%;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .navigation {
+            position: fixed;
+            top:0;
+            width: 100%;
+            height: 7%;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            display: flex;
+            background-color: white;
+            box-sizing: border-box;
+            box-shadow: 0 1px 2px #00000026;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header li {
+            display: inline;
+            padding: 10px;
+            align-items: flex-end;
+        }
+
+        .navigation li a {
+            text-decoration: none;
+            text-align: center;
+            color: #2F411B;
+            border-bottom: 3px solid transparent;
+        }
+
+        .navigation li a:hover {
+            color: #265122;
+            border-bottom: 3px solid #265122;
+            transition: .5s;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-weight: 900;
+        }
+
+        .faq-content{
+            min-height:100vh;
+            width:80%;
+            margin: 7% auto 0;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            color:#265122;
+        }
+
+        .faq-content h1 .name{
+            margin:2rem 0rem;
+        }
+
+        .faq{
+            max-width:700px;
+            margin-top:2rem;
+            padding-bottom:2rem;
+            border-bottom: 2px solid #2F411B;
+            cursor: pointer;
+        }
+
+        .ques{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ques{
+            font-size: 1.5rem;
+        }
+
+        .ans p{
+            padding-top: 10px;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        
+        .footer {
+            background-color: #2F411B;
+            text-align: center;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            gap: 3.5rem;
+            margin-top: 10px;
+        }
+
+        .footer .content li{
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+
+        .footer .content h4 {
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 20px;
+        }
+
+        .footer .content li a{
+            text-decoration: none;
+            color:beige;
+            transition: all .40s ease;
+        }
+
+
+        .footer .content li a:hover{
+            color: #FECF3F;
+        }
+
+        .footer .icons{
+            font-size: 24px;
+        }
+        .footer .icons a{
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="navigation">
+            <div class = "logo">
+                <h2><img src="logo.png" alt="logo" style="width: 30px;height: 30px; border-radius: 100px;">   Basanta Emporium</h2>
+            </div>
+
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li><a href="/index.html" target="_self">Home</a></li> 
+                        <li><a href="/About Us.html" target="_self">About Us</a></li>
+                        <li><a href="/Products.html" target="_self">Products</a></li>
+                        <li><a href="/Converter.html" target="_self">Converter</a></li>
+                        <li><a href="/FAQs.html" target="_self">FAQs</a></li>
+                        <li><a href="/Contacts.html" target="_self">Contacts</a></li>
+
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-content">
+        <h1 class="name">FAQs</h1>
+
+        <div class="faq">
+            <div class="ques">
+               <h3>What types of products do you offer?</h3><i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="ans">
+                <p>
+                    We specialize in handcrafted silver items, metal works, and Buddhist ritual artifacts.
+                    Our products include jewelry, decorative items, statues, prayer wheels, singing bowls, and other traditional Tibetan handicrafts.  
+                </p>
+            </div>
+        </div>
+    
+
+
+        <div class="faq">
+            <div class="ques">
+                <h3>Do you use real silver in your jewelry?</h3><i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="ans">
+                <p>
+                    Yes, our silver jewelry is made from high-quality, genuine silver.
+                    We ensure that all our pieces are crafted with pure silver and meet industry standards.  
+                </p>
+            </div>
+        </div>
+        
+        <div class="faq">
+            <div class="ques">
+                <h3>How can I place an order?</h3><i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="ans">
+                <p>
+                    You can place an order by visiting our shop in Boudha, Nepal or by contacting us directly via email or phone. 
+                    We also accept orders through social media platforms.  
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="ques">
+                <h3>Do you ship internationally?</h3><i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="ans">
+                <p>
+                    Yes, we offer international shipping.
+                        Shipping costs and delivery times vary depending on the destination.  
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="ques">
+                <h3>Can I visit your physical store?</h3><i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="ans">
+                <p>
+                    Yes, you are welcome to visit our physical store in Nepal. 
+                    Please check our contact page for our store location 
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="ques">
+                <h3>What payment methods do you accept?</h3><i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
+
+            <div class="ans">
+                <p>
+                    We accept various payment methods, including cash, online transfer and bank transfers.  
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class = "footer">
+        <div class = "content"> 
+            <h4>Quick Links</h4>
+            <li><a href ="index.html">Home</a></li>
+            <li><a href ="Products.html">Products</a></li>
+            <li><a href ="converter.html">Converter</a></li>
+        </div>
+
+        <div class = "content"> 
+            <h4>Business</h4>
+            <li><a href ="About Us.html">About Us</a></li>
+            <li><a href ="Contacts.html">Contact Us</a></li>
+            <li><a href ="services.html">Our Services</a></li>
+            <li><a href ="#">Location</a></li>
+        </div>
+
+        <div class = "content"> 
+            <h4>Help</h4>
+            <li><a href ="#">Pricing</a></li>
+            <li><a href ="FAQs.html">FAQs</a></li>
+            <li><a href ="#">Shipping</a></li>
+            <li><a href ="#">Payment Methods</a></li>
+        </div>
+
+        <div class = "content"> 
+            <h4>Find Us On</h4>
+            <div class="icons">
+                <a href ="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href ="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href ="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href ="#"><i class="fa fa-wechat"></i></a>
+            </div>
+    </section>
+</body>
+</html>
