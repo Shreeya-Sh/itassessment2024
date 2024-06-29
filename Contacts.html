@@ -5,252 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Basanta Emporium</title>
         <link rel="icon" type="image/x-icon" href="logo.png">
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="contactstyle.css">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js">
-        </script>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: 'Lucida Sans',sans-serif;
-            }
-
-            .logo {
-                text-align: center;
-                color: #2F411B;
-                padding-left: 2%;
-            }
-
-            .header {
-                text-align: center;
-            }
-
-            .navigation {
-                position: fixed;
-                top:0;
-                width: 100%;
-                height: 7%;
-                justify-content: space-around;
-                align-items: center;
-                margin: auto;
-                display: flex;
-                background-color: white;
-                box-sizing: border-box;
-                box-shadow: 0 1px 2px #00000026;
-
-            }
-
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-            }
-
-            .header li {
-                display: inline;
-                padding: 10px;
-                align-items: flex-end;
-            }
-
-            .navigation li a {
-                text-decoration: none;
-                text-align: center;
-                color: #2F411B;
-                border-bottom: 3px solid transparent;
-            }
-
-            .navigation li a:hover {
-                color: #265122;
-                border-bottom: 3px solid #265122;
-                transition: .5s;
-            }
-
-            .navigation a {
-                text-decoration: none;
-                font-weight: 900;
-            }
-
-            .contactus{
-                position:relative;
-                min-height:100vh;
-                padding:50px 100px;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
-
-            .contact-content{
-                max-width: 800px;
-                text-align: center;
-
-            }
-
-            .contact-content h1{
-                font-size: 36px;
-                font-weight:500;
-                color:#265122;
-            }
-
-            .container{
-                width:100%;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                margin-top:30px;
-                flex-wrap: wrap;
-
-            }
-
-            .map {
-                flex:1;
-                width: 100%;
-                text-align: center;
-                margin-right: 20px;
-                margin-bottom: 30px;
-            }
-
-            .container .contactinfo{
-                width:100%;
-                max-width: 400px;
-                display: flex;
-                flex-direction: column;
-                margin-top: 50px;
-            }
-
-            .container .contactinfo .box{
-                position: relative;
-                padding:10px 10px;
-                display: flex;
-                margin-bottom: 20px;
-
-            }
-
-
-            .container .contactinfo .box .icon{
-                min-width: 60px;
-                height:60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                background-color: #265122;
-                color:white;
-
-            }
-
-            .container .contactinfo .box .text{
-                display: flex;
-                margin-left:20px;
-                color:#265122;
-                flex-direction:column;
-
-            }
-
-            .contactinfo .box h3 a{
-                text-decoration: none;
-                color:#265122;
-            }
-
-
-            .contactform{
-                width: 40%;
-                padding: 40px;
-                background-color: #265122;
-                border-radius: 20px;
-            }
-
-            .contactform h2{
-                position:relative;
-                color:white;
-                font-size: 30px;
-                margin: 0;
-            }
-
-            .contactform .box{
-                color:white;
-                width:100%;
-                margin-top:10px;
-                font-size: 20px;
-            }
-
-            .contactform .box input,
-            .contactform .box textarea{
-                width:100%;
-                border-radius: 5px;
-                font-size: 18px;
-                padding:10px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                border: none;
-            }
-
-            .contactform .box textarea{
-                color:gray;
-            }
-
-            .contactform form #submit{
-                background-color: white;
-                color:#265122;
-                width:100px;
-                font-size: 18px;
-                margin-top: 10px;
-                padding: 10px;
-                border: none;
-                cursor: pointer;
-                border-radius: 5px;
-            }
-
-            .contactform form #submit:hover{
-                background-color: #FECF3F;
-                color:#265122;
-                font-weight: bold;
-            }
-
-            .footer {
-                background-color: #2F411B;
-                text-align: center;
-                padding: 10px;
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-                gap: 3.5rem;
-                margin-top: 10px;
-            }
-
-            .footer .content li{
-                list-style-type: none;
-                margin-bottom: 15px;
-            }
-
-            .footer .content h4 {
-                margin-bottom: 1.5rem;
-                color: white;
-                font-size: 20px;
-            }
-
-            .footer .content li a{
-                text-decoration: none;
-                color:beige;
-                transition: all .40s ease;
-            }
-
-
-            .footer .content li a:hover{
-                color: #FECF3F;
-            }
-
-            .footer .icons{
-                font-size: 24px;
-            }
-            .footer .icons a{
-                color:white;
-            }
-
-
-        </style>
+        <script src="script.js"></script>
+     
     </head>
 
     <body>
@@ -265,8 +25,7 @@
                         <ul>
                             <li><a href="/index.html" target="_self">Home</a></li> 
                             <li><a href="/About Us.html" target="_self">About Us</a></li>
-                            <li><a href="/Products.html" target="_self">Products</a></li>
-                            <li><a href="/Converter.html" target="_self">Converter</a></li>
+                            <li><a href="/gallery.html" target="_self">Products</a></li>
                             <li><a href="/FAQs.html" target="_self">FAQs</a></li>
                             <li><a href="/Contacts.html" target="_self">Contacts</a></li>
     
@@ -288,48 +47,62 @@
                 </div>
 
                 <div class="contactform">
-                    <form>
+                    <form id="contact-form" onsubmit="return false">
                         <h2>Send Us A Message</h2>
                         <div class="box">
-                            Name<br>
-                            <input type="text" name="firstname" placeholder="First Name*" required>
-                            <input type="text" name="firstname" placeholder="Middle Name" required>
-                            <input type="text" name="firstname" placeholder="Surname*" required>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="firstname" name="firstname" placeholder="First Name*" required ><span class="error-message"></span>
+                            <input type="text" id="middlename" name="middlename" placeholder="Middle Name">
+                            <input type="text" id="surname" name="firstname" placeholder="Surname*" required><span class="error-message"></span>
                         </div>
 
                         <div class="box">
-                            Phone Number<br>
-                            <script>
-                                const phoneInputField = document.querySelector("#phone");
-                                const phoneInput = window.intlTelInput(phoneInputField, {
-                                  utilsScript:
-                                    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-                                });
-                            </script>
-                            <input type="number" name="code" placeholder="Country Code*" required>
-                            <input type="number" name="number" placeholder="Phone Number*" required>
+                            <label for="country">Phone Number</label>
+                            <select id="country" name="country">
+                                <option value="code" style="color: gray;" selected disabled >Select Country*</option>
+                                <option value="61">Australia (+61)</option>
+                                <option value="86">China (+86)</option>
+                                <option value="33">France (+33)</option>
+                                <option value="49">Germany (+49)</option>
+                                <option value="62">Indonesia (+62)</option>
+                                <option value="91">India (+91)</option>
+                                <option value="81">Japan (+81)</option>
+                                <option value="82">South Korea (+82)</option>
+                                <option value="977">Nepal (+977)</option>
+                                <option value="64">New Zealand (+64)</option>
+                                <option value="63">Philippines (+63)</option>
+                                <option value="7">Russia (+7)</option>
+                                <option value="34">Spain (+34)</option>
+                                <option value="66">Thailand (+66)</option>
+                                <option value="886">Taiwan (+886)</option>
+                                <option value="1-868">Trinidad and Tobago (+1 868)</option>
+                                <option value="44">United Kingdom (+44)</option>
+                                <option value="1">United States (+1)</option>
+                                <option value="84">Vietnam (+84)</option>
+                            </select><span class="error-message" id="error-country"></span>
+                            <input type="text" id="number" name="number" placeholder="Phone Number*" required><span class="error-message"></span>
                         </div>
 
                         <div class="box">
-                            Email<br>
-                            <input type="email" name="email" placeholder="Email Address*" required>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" placeholder="Email Address*" required><span class="error-message"></span>
                         </div>
 
                         
                         <div class="box">
-                            Address<br>
-                            <input type="text" name="Address" placeholder="Address" required>
+                            <label for="address">Address</label><br>
+                            <input type="text" id="address" name="Address" placeholder="Address" required><span class="error-message"></span>
                         </div>
 
                         
                         <div class="box">
-                            Message<br>
-                            <textarea>Write your Message Here</textarea>
+                            <label for="message">Message</label><br>
+                            <textarea id="message">Write your Message Here</textarea><span class="error-message"></span>
                         </div>
 
-                        <input type="submit" name="Send" value="Send" id="submit">
+                        <button onclick="sendContact();">Send</button>
+                        <button onclick="resetForm();">Reset</button>
                     </form>
-
                 </div>
 
                 <div class="contactinfo">
@@ -364,34 +137,40 @@
             <div class = "content"> 
                 <h4>Quick Links</h4>
                 <li><a href ="index.html">Home</a></li>
-                <li><a href ="Products.html">Products</a></li>
-                <li><a href ="converter.html">Converter</a></li>
+                <li><a href ="gallery.html">Products</a></li>
             </div>
-    
+
             <div class = "content"> 
                 <h4>Business</h4>
                 <li><a href ="About Us.html">About Us</a></li>
                 <li><a href ="Contacts.html">Contact Us</a></li>
-                <li><a href ="services.html">Our Services</a></li>
-                <li><a href ="#">Location</a></li>
+                <li><a href ="FAQs.html">Our Services</a></li>
+                <li><a href ="Contacts.html">Location</a></li>
             </div>
-    
+
             <div class = "content"> 
                 <h4>Help</h4>
-                <li><a href ="#">Pricing</a></li>
+                <li><a href ="FAQs.html">Pricing</a></li>
                 <li><a href ="FAQs.html">FAQs</a></li>
-                <li><a href ="#">Shipping</a></li>
-                <li><a href ="#">Payment Methods</a></li>
+                <li><a href ="FAQs.html">Shipping</a></li>
+                <li><a href ="FAQs.html">Payment Methods</a></li>
             </div>
-    
+
             <div class = "content"> 
                 <h4>Find Us On</h4>
                 <div class="icons">
                     <a href ="#"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href ="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href ="https://www.instagram.com/basantaemporium?igsh=YjN6dWNnemh3emU= target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
                     <a href ="#"><i class='bx bxl-whatsapp'></i></a>
                     <a href ="#"><i class="fa fa-wechat"></i></a>
                 </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 Basanta Emporium</p>
+            </div>
+
         </section>
     </body>
 </html>

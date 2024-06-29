@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans',sans-serif;
+}
+
+.logo {
+    text-align: center;
+    color: #2F411B;
+    padding-left: 2%;
+}
+
+.header {
+    text-align: center;
+
+}
+
+.navigation {
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 7%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px #00000026;
+    z-index: 1000;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    display: inline;
+    padding: 10px;
+    align-items: flex-end;
+}
+
+.navigation li a {
+    text-decoration: none;
+    text-align: center;
+    color: #2F411B;
+    border-bottom: 3px solid transparent;
+}
+
+.navigation li a:hover {
+    color: #265122;
+    border-bottom: 3px solid #265122;
+    transition: .5s;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.contactus{
+    position:relative;
+    min-height:100vh;
+    padding:50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index:0;
+}
+
+.contact-content{
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contact-content h1{
+    font-size: 36px;
+    font-weight:500;
+    color:#265122;
+}
+
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top:30px;
+    flex-wrap: wrap;
+
+}
+
+.map {
+    flex:1;
+    width: 100%;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.container .contactinfo{
+    width:100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.container .contactinfo .box{
+    position: relative;
+    padding:10px 10px;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #265122;
+    color:white;
+
+}
+
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left:20px;
+    color:#265122;
+    flex-direction:column;
+
+}
+
+.contactinfo .box h3 a{
+    text-decoration: none;
+    color:#265122;
+}
+
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background-color: #265122;
+    border-radius: 20px;
+}
+
+.contactform h2{
+    position:relative;
+    color:white;
+    font-size: 30px;
+    margin: 0;
+}
+
+.contactform .box{
+    color:white;
+    width:100%;
+    margin-top:10px;
+    font-size: 20px;
+}
+
+.contactform .box input,
+.contactform .box textarea,
+.contactform .box select{
+    width:100%;
+    border-radius: 5px;
+    font-size: 18px;
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+
+
+#country option[disabled] {
+    color: gray;
+}
+
+.contactform .box textarea{
+    color:gray;
+}
+
+.contactform form #submit,
+.contactform form button{
+    background-color: white;
+    color:#265122;
+    width:100px;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contactform form #submit,
+.contactform form button:hover{
+    background-color: #FECF3F;
+    color:#265122;
+    font-weight: bold;
+}
+
+.placeholderRed {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.footer {
+    background-color: #2F411B;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    margin-top: 10px;
+}
+
+.footer .content li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 20px;
+}
+
+.footer .content li a{
+    text-decoration: none;
+    color:beige;
+    transition: all .40s ease;
+}
+
+
+.footer .content li a:hover{
+    color: #FECF3F;
+}
+
+.footer .icons{
+    font-size: 24px;
+}
+.footer .icons a{
+    color:white;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}

@@ -1,7 +1,13 @@
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans',sans-serif;
+}
+.banner {
+    width: 100%;
+    max-width: 1320px;
+    display: block;
 }
 
 .logo {
@@ -66,22 +72,101 @@ ul {
     font-weight: 900;
 }
 
-.navbar2 {
-    background-color: #f1f1f1;
-    width: 100%;
-    padding: 10px 0;
+.title h1{
+    color:#265122;
     text-align: center;
+    margin-top:50px;
+    
 }
 
-.navbar2 a {
-    color: #2F411B;
-    text-decoration: none;
-    padding: 10px 20px;
+.productGallery{
+    background-color: whitesmoke;;
 }
 
-.banner{
-    margin-top:7% 0;
+.productGallery h1{
+    text-align: center;
+    color:#2F411B;
+    padding:10px;
 }
+
+
+div.gallery {
+    border: 1px solid #ccc;
+    margin-bottom:10px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    box-shadow: 0 1px 2px #00000026;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight:bold;
+    color: #265122;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  div.scroll-container {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+
+  div.scroll-container img {
+    padding: 10px;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .productrow {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 1; 
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .footer {
     background-color: #2F411B;
@@ -90,7 +175,10 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
+    left: 0;
+    right: 0;
     bottom:0;
+
 }
 
 .footer .content li{
@@ -120,4 +208,11 @@ ul {
 }
 .footer .icons a{
     color:white;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
 }

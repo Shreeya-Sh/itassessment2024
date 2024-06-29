@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -202,4 +203,11 @@ body {
 }
 .footer .icons a{
     color:white;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
 }

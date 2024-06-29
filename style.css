@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     padding: 0;
@@ -136,7 +138,7 @@ a:active {
 
 .pictures {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 1.5rem;
     justify-content: space-around;
     text-align: center;
@@ -144,7 +146,17 @@ a:active {
 }
 
 .pictures .pics {
-    padding: 20px;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+.pics img {
+    display: block;
+    max-width: 100%;/
+    height: auto;
+    margin-bottom: 10px; 
 }
 
 .pictures .pics:hover {
@@ -171,6 +183,144 @@ a:visited {
 a:active {
     background-color: #265122;
     color: white;
+}
+
+.productGallery{
+    background-color: whitesmoke;;
+}
+
+.productGallery h2{
+    text-align: center;
+    color:#2F411B;
+    padding:10px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    margin-bottom:10px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.6)
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight:bold;
+    color: #265122;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+#seegallery{
+    background-color: white;
+    color: #2F411B;
+    border: 2px solid #2F411B;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+
+#seegallery:hover{
+    background-color: #265122;
+    color: white;
+}
+
+
+
+.faq-content{
+    min-height:100%;
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:#265122;
+    padding-bottom:30px;
+}
+
+.faq{
+    max-width:700px;
+    margin-top:2rem;
+    margin-left:30px;
+    border-bottom: 2px solid #2F411B;
+    cursor: pointer;
+    align-items: center;
+}
+.faq h2{
+    text-align: center;
+    color: #265122;
+
+}
+
+.ques{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ques{
+    font-size: 1.5rem;
+}
+
+.ans p{
+    padding-top: 10px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.read-more {
+    color: #2F411B;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #2F411B;
+    padding: 10px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+
+.read-more:hover {
+    background-color: #265122;
+    color: white;
+    border-color: #265122;
 }
 
 .footer {
@@ -209,4 +359,11 @@ a:active {
 }
 .footer .icons a{
     color:white;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
 }
